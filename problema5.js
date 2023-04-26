@@ -11,9 +11,11 @@ let numDeMascotas = prompt("Ingrese la cantidad de mascotas");
 let opcionUno = "perros";
 let opcionDos = "gato";
 
-if (((consultaMascota == opcionUno) && (numDeMascotas <= CANT_MAX_PERROS) && (numDeMascotas > CANT_POR_DEF) && (cantDeTiempo >= PASEO_TIEMPO_MIN) && (cantDeTiempo <= PASEO_TIEMPO_MAX))) {
+if ((consultaMascota == opcionUno) && (numDeMascotas <= CANT_MAX_PERROS) && (numDeMascotas > CANT_POR_DEF)) {
+      if ((cantDeTiempo >= PASEO_TIEMPO_MIN) && (cantDeTiempo <= PASEO_TIEMPO_MAX))
       document.write("Pedido confirmado : el paseador llegara en 20 minutos");
-} else if (((consultaMascota == opcionDos) && (numDeMascotas == CANT_MAX_GATOS) && (numDeMascotas > CANT_POR_DEF) && (cantDeTiempo >= PASEO_TIEMPO_MIN) && (cantDeTiempo <= PASEO_TIEMPO_MAX))) {
+} else if ((consultaMascota == opcionDos) && (numDeMascotas == CANT_MAX_GATOS) && (numDeMascotas > CANT_POR_DEF)) {
+      if ((cantDeTiempo >= PASEO_TIEMPO_MIN) && (cantDeTiempo <= PASEO_TIEMPO_MAX))
       document.write("Pedido confirmado : el paseador llegara en 20 minutos");
 }
   
